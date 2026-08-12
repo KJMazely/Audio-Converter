@@ -1,5 +1,5 @@
 # Audio Converter
-A Python GUI and CLI Audio Converter, that can convert audio files to MP3 or WAV.
+A Python GUI and CLI Audio Converter, that can convert audio files to MP3 or WAV. Inspired from [PYP2205](https://github.com/PYP2205/Python-Audio-Converter/)
 
 # Requirements
 - pydub
