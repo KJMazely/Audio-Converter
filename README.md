@@ -74,3 +74,9 @@ If you are going to use Pyinstaller, then run
 
 - ```PyInstaller --noconfirm --onedir --windowed --name "Audio Converter" --add-data "convert.py;." --add-data "icons/moon.png;icons" --add-data "icons/sun.png;icons" --collect-all tkinterdnd2 audio_converter.py``` (saves the python app as a portable executable).
 - When moving, keep **_internal** in the same directory as the executable
+
+
+# AI Diclosure
+### AI Used for:
+- commenting
+- dark mode/light mode CSS
