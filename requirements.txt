@@ -1,1 +1,4 @@
+pydub
+ffmpeg
+tkinter
 tkinterdnd2==0.6.2
