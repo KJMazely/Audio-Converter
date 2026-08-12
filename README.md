@@ -14,8 +14,8 @@ A Python GUI and CLI Audio Converter, that can convert audio files to MP3 or WAV
 ### Windows:
 ```pip install -r requirements.txt```
 ### Linux:
-```pip3 install pydub```
-```sudo apt-get install ffmpeg```
+- ```pip3 install pydub```
+- ```sudo apt-get install ffmpeg```
 
 # Running the program:
 There are two different ways to use the program, through a GUI or CLI
