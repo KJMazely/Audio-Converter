@@ -327,13 +327,13 @@ if HAS_GUI:
             entry = ttk.Entry(row_frame, textvariable=variable, width=42)
             entry.grid(row=0, column=0, sticky="ew")
             ttk.Button(row_frame, text="Browse…", command=command).grid(row=0, column=1, padx=(7, 0))
-            if label == "Image file":
+            if label == "Audio file":
                 # Register the entry as a drag-and-drop target for the file field only.
                 entry.drop_target_register(DND_FILES)
                 entry.dnd_bind("<<Drop>>", self.drop_file)
 
         def drop_file(self, event):
-            """Handle a file being dragged and dropped onto the image file entry."""
+            """Handle a file being dragged and dropped onto the audio file entry."""
             files = self.tk.splitlist(event.data)
             if not files:
                 return
@@ -342,7 +342,7 @@ if HAS_GUI:
                 # Reject folders dropped by mistake
                 self.status_var.set("Drop an audio file, not a folder.")
                 return
-            self.set_image_file(path)
+            self.set_audio_file(path)
 
         def choose_file(self):
             path = filedialog.askopenfilename(
