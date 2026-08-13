@@ -1,10 +1,20 @@
 """A small desktop and command-line audio converter."""
 
 import argparse
+import os
 import sys
 import threading
 import tkinter as tk
 from pathlib import Path
+
+def _setup_ffmpeg() -> None:
+    """Add ffmpeg to PATH when running as a frozen exe."""
+    if hasattr(sys, "_MEIPASS"):
+        os.environ["PATH"] = sys._MEIPASS + os.pathsep + os.environ.get("PATH", "")
+
+_setup_ffmpeg()
+
+
 try:
     import tkinter as tk
     from tkinter import filedialog, messagebox, ttk
